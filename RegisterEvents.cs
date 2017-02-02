@@ -94,7 +94,7 @@ namespace UmbracoCourier.EventsLogger
                     }
                     else
                     {
-                        LogHelper.Info<RegisterEvents>(eventName + ": ItemEventArgs.Item.ItemId: " + e.Item.ItemId.ToString());
+                        LogHelper.Info<RegisterEvents>(eventName + ": ItemEventArgs.Item.ItemId.Id: " + e.Item.ItemId.Id);
                     }
                     LogHelper.Info<RegisterEvents>(eventName + ": ItemEventArgs.Item.ItemType: " + e.Item.ItemType.ToString());
                     if (e.Item.Name == null)
@@ -112,7 +112,7 @@ namespace UmbracoCourier.EventsLogger
                 }
                 else
                 {
-                    LogHelper.Info<RegisterEvents>(eventName + ": ItemEventArgs.ItemId: " + e.ItemId.ToString());
+                    LogHelper.Info<RegisterEvents>(eventName + ": ItemEventArgs.ItemId.Id: " + e.ItemId.Id);
                 }
             }
         }
